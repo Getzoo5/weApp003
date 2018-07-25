@@ -15,16 +15,71 @@ exports.default = Page({
     sliderLeft: 0,
     sliderWidth: sliderWidth,
 
-    item: [{ 
-      img: '../../IMG/20180724175048.png',
+    item: [{
+      img: '../../IMG/1.png',
       types: 1,
-      name: '甜美的咬痕',
-      author: '锐思+伊凯',
-      title: '誓言篇 第33话 浪漫誓言誓言篇',
+      name: '六月的不可思议',
+      author: '六柴',
+      title: '第49话 总裁是个胆小鬼',
+      zan: '23万',
+      msg: '26528'
+    },{
+      img: '../../IMG/2.png',
+      types: 1,
+      name: '看见漫画偶像',
+      author: '看见漫画偶像',
+      title: '5强人气男神终于诞生！！',
+      zan: '60万',
+      msg: '56524'
+    },{
+      img: '../../IMG/3.png',
+      types: 1,
+      name: '琼楼传',
+      author: '一罐子老丸',
+      title: '第1话 穆小楼',
       zan: '81万',
       msg: '56524'
-      }
-    ]
+    }, {
+      img: '../../IMG/4.png',
+      types: 1,
+      name: '与子成说',
+      author: '四喜',
+      title: '第2话 银子...是什么？',
+      zan: '81万',
+      msg: '56524'
+    }, {
+      img: '../../IMG/5.png',
+      types: 1,
+      name: 'SOS!恋爱出了幺蛾子',
+      author: '兔街子',
+      title: '第39话 啾啾',
+      zan: '81万',
+      msg: '56524'
+    }, {
+      img: '../../IMG/6.png',
+      types: 1,
+      name: '银河来电',
+      author: '栗子liz',
+      title: '第2话 就叫你“XO”吧！',
+      zan: '81万',
+      msg: '56524'
+    }, {
+      img: '../../IMG/7.png',
+      types: 1,
+      name: '怪奇实录',
+      author: '妖春桥',
+      title: '第118话 漂亮头发 中',
+      zan: '81万',
+      msg: '56524'
+    }, {
+      img: '../../IMG/8.png',
+      types: 1,
+      name: '甜美的吻痕',
+      author: '四喜',
+      title: '第99话 等一切结束了，我们结婚吧！！！',
+      zan: '81万',
+      msg: '56524'
+    }]
   },
   onShow() {
   },
@@ -36,9 +91,9 @@ exports.default = Page({
         that.setData({
           sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex + 8
-        });
+        })
       }
-    });
+    })
   },
   capsuleActive(e) {
     if (e.currentTarget.dataset.id - 0)
