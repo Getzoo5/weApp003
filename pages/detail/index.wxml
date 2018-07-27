@@ -1,4 +1,5 @@
 <!--pages/detail/index.wxml-->
+<<<<<<< HEAD
 <view class='navtop {{isLook?"ishide":""}}' style='height:{{navtopHeight}}rpx;{{isLook?"top:-"+navtopHeight+"rpx":""}}'>
   <view class='navtop-system' style='height:{{navtopSystem}}px'></view>
   <view class='navtop-tit' style='line-height:{{navTopTit}}rpx;height:{{navTopTit}}rpx'>
@@ -29,3 +30,6 @@
     </view>
   </view>
 </view>
+=======
+<text>pages/detail/index.wxml</text>
+>>>>>>> 53ce11391aeeca4c83184522e9148173e6a5e64c
