@@ -1,0 +1,31 @@
+<!--pages/detail/index.wxml-->
+<view class='navtop {{isLook?"ishide":""}}' style='height:{{navtopHeight}}rpx;{{isLook?"top:-"+navtopHeight+"rpx":""}}'>
+  <view class='navtop-system' style='height:{{navtopSystem}}px'></view>
+  <view class='navtop-tit' style='line-height:{{navTopTit}}rpx;height:{{navTopTit}}rpx'>
+  <view class='back' bindtap='back' wx:if="{{back}}"><image src='../../assets/icon/left.png'></image></view>
+  <view class='title'>{{navtit}}</view>
+  </view>
+</view>
+
+<view class='content' style='{{isLook?"padding:0":"padding-top:"+navtopHeight+"rpx"}}' bindtap='content'>
+  <image wx:for="{{url}}" wx:key='item' lazy-load wx:for-index='i' src='{{url[i]}}' mode='widthFix' style='width:100%;display:block'></image>
+</view>
+
+<view class='tool-nav {{isLook?"ishide":""}}'>
+  <view class='tool-search'>
+    <button plain>发送</button>
+    <input type='text' placeholder='1363人正在看，打个招呼吧'></input>
+  </view>
+  <view class='tool-tools'>
+    <view class='tool-chack'>
+      <image src='../../assets/icon/left.png'></image>
+      <text>当前话</text>
+      <image src='../../assets/icon/right.png'></image>
+    </view>
+    <view class='tool-system'>
+      <image src='../../assets/icon/msg1.png'></image>
+      <image src='../../assets/icon/share.png'></image>
+      <image src='../../assets/icon/set.png'></image>
+    </view>
+  </view>
+</view>

@@ -19,7 +19,7 @@
         </view>
         <view class="weui-tab__panel" style='padding-top:{{navtopHeight + 76}}rpx'>
           <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-            <view class='card-item' wx:for='{{item}}'>
+            <navigator url='/pages/detail/index?id={{item.id}}' class='card-item' wx:for='{{item}}' wx:key='item'>
               <view class="weui-cell weui-cell_access">
                 <view class="weui-cell__bd">
                     <view>
@@ -42,7 +42,7 @@
                   <view>{{item.msg}}</view>
                 </view>
               </view>
-            </view>
+            </navigator>
           </view>
         </view>
     </view>

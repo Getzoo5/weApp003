@@ -1,0 +1,116 @@
+/* pages/detail/index.wxss */
+/* 工具导航 */
+.ishide.tool-nav{
+  bottom: -155rpx;
+}
+.tool-nav{
+  height: 155rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #FAFAFA;
+  transition: all .4s
+}
+.tool-search{
+  width: 100%;
+  padding: 16rpx 20rpx;
+  box-sizing: border-box;
+  height: 88rpx;
+}
+.tool-search input{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: 15%;
+  padding-left: 20rpx;
+  font-size: 26rpx;
+  border: #D6D6D6 solid 2rpx;
+  display: block;
+  border-radius: 28rpx
+}
+.tool-search button[plain]{
+  font-size: 28rpx;
+  border: none;
+  width: 15%;
+  height: 100%;
+  line-height: 56rpx;
+  float: right;
+  padding: 0;
+}
+.tool-tools{
+  height: 68rpx;
+  padding: 0 20rpx 5rpx;
+  box-sizing: border-box
+}
+.tool-chack{
+  width: 40%;
+  height: 100%;
+  font-size: 24rpx;
+  display: inline-block;
+  margin-right: 6%;
+  vertical-align: top
+}
+.tool-chack image{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle
+}
+.tool-chack text{
+  width: 40%;
+  height: 62rpx;
+  line-height: 62rpx;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle
+}
+.tool-system{
+  width: 54%;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 8rpx;
+  vertical-align: top
+}
+.tool-system image{
+  width: 36rpx;
+  height: 36rpx;
+  margin: 0 20rpx;
+}
+.tool-system image:nth-of-type(2){
+  margin: 0 80rpx;
+}
+
+/* content */
+.content{
+  padding-bottom: 155rpx
+}
+
+.back{
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  position: relative;
+  vertical-align: top
+}
+.back image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.title{
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

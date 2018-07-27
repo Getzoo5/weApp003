@@ -1,4 +1,5 @@
 'use strict';
+var data = require('../../utils/data.js')
 var sliderWidth = 35; // 需要设置slider的宽度，用于计算中间位置
 
 const app = getApp()
@@ -15,16 +16,7 @@ exports.default = Page({
     sliderLeft: 0,
     sliderWidth: sliderWidth,
 
-    item: [{ 
-      img: '../../IMG/20180724175048.png',
-      types: 1,
-      name: '甜美的咬痕',
-      author: '锐思+伊凯',
-      title: '誓言篇 第33话 浪漫誓言誓言篇',
-      zan: '81万',
-      msg: '56524'
-      }
-    ]
+    item: [ ]
   },
   onShow() {
   },
@@ -36,9 +28,11 @@ exports.default = Page({
         that.setData({
           sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex + 8
-        });
+        })
       }
-    });
+    })
+    var mydata = data.sayHello(0)
+    this.setData({ item: mydata })
   },
   capsuleActive(e) {
     if (e.currentTarget.dataset.id - 0)

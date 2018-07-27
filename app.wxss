@@ -12,3 +12,30 @@
 page{
   background: #F5F9F8
 }
+/* 头部 */
+.navtop{
+  width: 100%;
+  background: #FCE33E;
+  position: fixed;
+  z-index: 999;
+  top:0;
+  transition: top .4s 
+}
+.navtop-system{
+  background: #000;
+  width: 100%;
+}
+.navtop-tit{
+  font-size: 30rpx;
+  background: #FAFAFA;
+  width: 100%;
+  font-weight: 600
+}
+
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
