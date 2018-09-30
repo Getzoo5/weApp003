@@ -1,12 +1,4 @@
-<!--index.wxml-->
-<view class='navtop' style='height:{{navtopHeight}}rpx'></view>
-<view class='capsule' style='top:{{capsuleTop}}rpx'>
-  <view class='capsule-box'>
-    <view data-id='0' bindtap='capsuleActive' class='{{isFollow?"active":""}}'>关注 <view class='point' hidden='1'></view></view>
-    <view data-id='1' bindtap='capsuleActive' class='{{isFollow?"":"active"}}'>热门 <view class='point'></view></view>
-  </view>
-  <view class='sider {{isFollow?"sider-blur":"sider-active"}}'></view>
-</view>
+<capsult></capsult>
 <view class='navbar'>
     <view class="weui-tab">
         <view class="weui-navbar" style='top:{{navtopHeight}}rpx'>
@@ -18,31 +10,43 @@
             <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);width:{{sliderWidth}}px"></view>
         </view>
         <view class="weui-tab__panel" style='padding-top:{{navtopHeight + 76}}rpx'>
-          <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-            <navigator url='/pages/detail/index?id={{item.id}}' class='card-item' wx:for='{{item}}' wx:key='item'>
-              <view class="weui-cell weui-cell_access">
-                <view class="weui-cell__bd">
-                    <view>
-                    <text wx:if="{{item.types == 1}}">恋爱</text>
-                    <text wx:if="{{item.types == 2}}" style='background: #FF6097;'>治愈</text>
-                    <text wx:if="{{item.types == 3}}">恋爱</text>
-                    <text wx:if="{{item.types == 4}}">恋爱</text>
-                    <text wx:if="{{item.types == 5}}">恋爱</text> <text> {{item.name}}</text></view>
-                    <view style="font-size: 24rpx;color: #888888;">作者: {{item.author}}</view>
-                </view>
-                <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 28rpx;color: #868686;">全集</view>
-              </view>
-              <image class='card-item-img' src='{{item.img}}'></image>
-              <view class='card-item-tit'>
-                <view>{{item.title}}</view>
-                <view class='card-item-data'>
-                  <image src='../../assets/icon/zan.png'></image>
-                  <view>{{item.zan}}</view>
-                  <image src='../../assets/icon/msg.png'></image>
-                  <view>{{item.msg}}</view>
-                </view>
-              </view>
-            </navigator>
+          <view class="weui-tab__content">
+            <swiper style='height:{{height}}rpx;' current='{{activeIndex}}' bindchange='swiperChange'>
+              <block wx:for="{{tabs}}" wx:key='item'>
+              <swiper-item style='height:100%;'>
+                <scroll-view scroll-y style='height:{{height}}rpx;'>
+                  <navigator wx:for='{{items}}' url='/pages/detail/index?id={{item.id}}' class='card-item' wx:key='item'>
+                    <view class="weui-cell weui-cell_access">
+                      <view class="weui-cell__bd">
+                        <view>
+                          <text wx:if="{{item.types == 1}}">恋爱</text>
+                          <text wx:if="{{item.types == 2}}" style='background: #FF6097;'>治愈</text>
+                          <text wx:if="{{item.types == 3}}">恋爱</text>
+                          <text wx:if="{{item.types == 4}}">恋爱</text>
+                          <text wx:if="{{item.types == 5}}">恋爱</text> <text> {{item.name}}</text>
+                        </view>
+                        <view class='disTit-2'>作者: {{item.author}}</view>
+                      </view>
+                      <view  class="disTit-2 weui-cell__ft weui-cell__ft_in-access" style="font-size: 28rpx">全集</view>
+                    </view>
+                    <image class='card-item-img' src='{{item.img}}' mode='aspectFill' lazy-load></image>
+                    <view class='card-item-tit'>
+                      <view>{{item.title}}</view>
+                      <view class='card-item-data disTit-2'>
+                        <image src='../../assets/icon/zan-1.png'></image>
+                        <view>{{item.zan}}</view>
+                        <image src='../../assets/icon/msg-1.png'></image>
+                        <view>{{item.msg}}</view>
+                      </view>
+                    </view>
+                  </navigator>
+                  <view class='bottom'>
+                    <image src='/assets/img/bottom.png'></image>
+                  </view>
+                </scroll-view>
+              </swiper-item>
+              </block>
+            </swiper>
           </view>
         </view>
     </view>

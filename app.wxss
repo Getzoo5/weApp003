@@ -10,7 +10,15 @@
   box-sizing: border-box;
 } 
 page{
-  background: #F5F9F8
+  background: #F5F9F8;
+  color: #000
+}
+.disTit-1{
+  color: #242424; 
+}
+.disTit-2{
+  font-size: 26rpx;
+  color: #939393
 }
 /* 头部 */
 .navtop{

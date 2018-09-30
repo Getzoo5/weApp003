@@ -9,8 +9,9 @@ exports.default = App({
   },
   globalData: {
     closeTabBar: false,
-    navtopHeight: null,
-    navtopSystem: null
+    navtopHeight: null,           // 顶部胶囊区高度
+    navtopSystem: null,           // 顶部系统区高度
+    height: null,           // 页面高度
   },
   onLaunch: function onLaunch() {
     var that = this
@@ -25,9 +26,8 @@ exports.default = App({
         } else {
           that.globalData.navtopHeight = 134
         }
+        that.globalData.height = res.windowHeight * 2
       }
     })
-  },
-  onShow: function onShow() { },
-  onHide: function onHide() { }
+  }
 });

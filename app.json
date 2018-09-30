@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/detail/index"
+    "pages/discover/index",
+    "pages/detail/index",
+    "pages/test/component"
   ],
   "window":{
     "backgroundTextStyle": "light",
@@ -9,5 +11,30 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "漫画",
+      "iconPath": "/assets/icon/tabBar/home.png",
+      "selectedIconPath": "/assets/icon/tabBar/home-h.png"
+    },{
+      "pagePath": "pages/discover/index",
+      "text": "发现",
+      "iconPath": "/assets/icon/tabBar/discover.png",
+      "selectedIconPath": "/assets/icon/tabBar/discover-h.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "世界",
+      "iconPath": "/assets/icon/tabBar/world.png",
+      "selectedIconPath": "/assets/icon/tabBar/world-h.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath": "/assets/icon/tabBar/mine.png",
+      "selectedIconPath": "/assets/icon/tabBar/mine-h.png"
+    }],
+    "color": "#202020",
+    "backgroundColor": "#FEFEFE"
   }
 }

@@ -1,0 +1,66 @@
+.navtop{
+  width: 100%;
+  background: #FCE33E;
+  position: fixed;
+  z-index: 999
+}
+
+.capsule{
+  width: 26%;
+  height: 56rpx;
+  background: #43240F;
+  border: #43240F solid 4rpx;
+  border-radius: 30rpx;
+  position: fixed;
+  font-size: 26rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999
+}
+.sider{
+  width: 50%;
+  height: 56rpx;
+  background: #FCE33E;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 0;
+  transition: transform .2s
+}
+.sider-blur{
+  transform: translateX(0)
+}
+.sider-active{
+  transform: translateX(100%)
+}
+
+.capsule-box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999
+}
+.capsule-box>view{
+  color: #FCE33E;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  line-height: 56rpx;
+  transition: color .2s;
+  position: relative
+}
+.capsule-box>view.active{
+  color: #43240F;
+} 
+
+.point{
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background: #f00;
+  position: absolute;
+  right: 8rpx;
+  top: 4rpx;
+  z-index: 100
+}

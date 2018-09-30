@@ -1,0 +1,1 @@
+<capsult prop-a="{{dataFieldA}}" prop-b="{{dataFieldB}}" my-class="yellowBG"></capsult>

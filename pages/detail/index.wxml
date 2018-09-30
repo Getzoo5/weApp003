@@ -6,7 +6,7 @@
   </view>
 </view>
 
-<view class='content' style='{{isLook?"padding:0":"padding-top:"+navtopHeight+"rpx"}}' bindtap='content'>
+<view class='content' style='{{isLook?"padding:0":"padding-top:"+navtopHeight+"rpx"}}' touchstart="touchstart" touchend="touchend" bindtap='content'>
   <image wx:for="{{url}}" wx:key='item' lazy-load wx:for-index='i' src='{{url[i]}}' mode='widthFix' style='width:100%;display:block'></image>
 </view>
 
