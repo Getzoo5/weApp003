@@ -1,0 +1,103 @@
+<view class='mine-top'>
+  <image class='mine-top-bg' src='/assets/img/mine-bg.png'></image>
+  <view class='mine'>
+    <image class='' src='https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erKCWVJSHYVRwNgQyfcV2sdycHeTt8v6eJduqJZR1GMe15ibsYdnnpPstCsiaqFlcmQyicy5pnakYuyA/132'></image>
+    <view class='nickName'>nickName</view>
+    <button class='mine-signIn' plain>今日已签到</button>
+  </view>
+  <view class='mine-nav'>
+    <view class='mine-nav-item'>
+      <image src='/assets/icon/set.png'></image>
+      <view class='mine-nav-itemin'>
+        <view>积分商城</view>
+        <view>228分</view>
+      </view>
+    </view>
+    <view class='mine-nav-item'>
+      <image src='/assets/icon/set.png'></image>
+      <view class='mine-nav-itemin'>
+        <view>我的钱包</view>
+        <view>266 KK币</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">我的消息</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">付费会员</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">我的频道</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">我的关注</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">我的收藏</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">浏览历史</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">游戏中心</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">快看商城</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">今日更新</view>
+        <view class="weui-cell__ft"></view>
+    </view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="/assets/icon/set.png" style="margin-right: 5px;vertical-align: middle;width:40rpx; height: 40rpx;"></image>
+        </view>
+        <view class="weui-cell__bd">设置</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+</view>

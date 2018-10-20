@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/discover/index",
+    "pages/mine/index",
     "pages/detail/index",
     "pages/test/component"
   ],
@@ -29,7 +30,7 @@
       "iconPath": "/assets/icon/tabBar/world.png",
       "selectedIconPath": "/assets/icon/tabBar/world-h.png"
     },{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/mine/index",
       "text": "我的",
       "iconPath": "/assets/icon/tabBar/mine.png",
       "selectedIconPath": "/assets/icon/tabBar/mine-h.png"

@@ -1,8 +1,11 @@
-<view class='navtop' style='height:{{navtopHeight}}rpx'></view>
-<view class='capsule' style='top:{{capsuleTop}}rpx'>
+<view class='navtop' style='height:{{navtopHeight}}rpx; background:{{capsuleSet.backgroundColor}};'></view>
+<view class='navtop-tool' style='top:{{capsuleTop + 4}}rpx;'>
+  <image src='{{capsuleSet.img}}' bindtap='tooltap'></image>
+</view>
+<view class='capsule' style='top:{{capsuleTop}}rpx; background:{{capsuleSet.bg}}; border:{{capsuleSet.border}} solid 4rpx'>
   <view class='capsule-box'>
-    <view data-id='0' bindtap='capsuleActive' class='{{isFollow?"active":""}}'>关注 <view class='point' hidden='1'></view></view>
-    <view data-id='1' bindtap='capsuleActive' class='{{isFollow?"":"active"}}'>热门 <view class='point'></view></view>
+    <view data-id='0' bindtap='capsuleActive' class='{{isFollow?(capsuleSet.activeClass||"active"):""}} {{capsuleSet.class}}'>{{capsuleSet.innerText1}} <view class='point' hidden='1'></view></view>
+    <view data-id='1' bindtap='capsuleActive' class='{{isFollow?"":(capsuleSet.activeClass||"active")}} {{capsuleSet.class}}'>{{capsuleSet.innerText2}} <view class='point'></view></view>
   </view>
-  <view class='sider {{isFollow?"sider-blur":"sider-active"}}'></view>
+  <view class='sider {{isFollow?"sider-blur":"sider-active"}}' style='background: {{capsuleSet.bgActive}}'></view>
 </view>

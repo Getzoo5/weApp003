@@ -1,10 +1,20 @@
 .navtop{
   width: 100%;
-  background: #FCE33E;
   position: fixed;
   z-index: 999
 }
 
+.navtop-tool{
+  width: 56rpx;
+  height: 56rpx;
+  position: fixed;
+  left: 50rpx;
+  z-index: 999;
+}
+.navtop-tool image{
+  width: 56rpx;
+  height: 56rpx;display: block
+}
 .capsule{
   width: 26%;
   height: 56rpx;
@@ -32,7 +42,6 @@
 .sider-active{
   transform: translateX(100%)
 }
-
 .capsule-box{
   width: 100%;
   height: 100%;
@@ -53,7 +62,12 @@
 .capsule-box>view.active{
   color: #43240F;
 } 
-
+.capsule-box>view.class{
+  color: #fff
+}
+.capsule-box>view.actives{
+  color: #DF973D;
+}
 .point{
   width: 16rpx;
   height: 16rpx;

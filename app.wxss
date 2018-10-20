@@ -47,3 +47,8 @@ width: 0;
 height: 0;
 color: transparent;
 }
+
+/* btnRefresh */
+#btnRefresh {
+  transition: 0.3s linear;
+}

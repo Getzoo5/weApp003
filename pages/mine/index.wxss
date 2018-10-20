@@ -1,0 +1,109 @@
+.mine-top{
+  width: 100%;
+}
+.mine-top-bg{
+  width: 100%;
+  height: 410rpx;
+  display: block
+}
+.mine-nav{
+  width: 100%;
+  background: #fff;
+  padding: 20rpx 0 10rpx;
+  margin-bottom: 10rpx
+}
+.mine-nav-item{
+  width: 50%;
+  display: inline-block;
+  padding: 0 30rpx;
+  box-sizing: border-box
+}
+.mine-nav-item image{
+  width: 40rpx;
+  height: 40rpx;display: inline-block;vertical-align: top; margin-right: 20rpx;
+}
+.mine-nav-item:first-of-type{
+  border-right: 2rpx solid #F7F7F7
+}
+.mine-nav-item .mine-nav-itemin{
+  vertical-align: top;
+  display: inline-block;
+}
+.mine-nav-itemin view:first-of-type{
+  font-size: 30rpx;
+  color: #171717;
+  line-height: 1.2;
+}
+.mine-nav-itemin view:last-of-type{
+  font-size: 20rpx;
+  color: #818181;
+  line-height: 2;
+}
+
+.weui-cells{
+  margin-bottom: 6rpx
+}
+.weui-cells::after,.weui-cells::before {
+  display: none;
+  margin-bottom: 6rpx
+}
+.weui-cell::before {
+  border-color: #F7F7F7;
+  left: 90rpx;
+  width: 630rpx
+}
+.weui-cell__hd{
+  width: 60rpx;
+}
+.weui-cell__bd{
+  font-size: 30rpx
+}
+.weui-cell__ft{
+  font-size: 20rpx
+}
+
+.mine{
+  width: 100%;
+  height: 1rpx;
+  position: relative;
+  background: #fff
+}
+.mine image{
+  width: 130rpx;
+  height: 130rpx;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -300rpx;
+  transform: translateX(-50%)
+}
+.mine .nickName{
+  width: 80%;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -170rpx;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 32rpx
+}
+button[plain].mine-signIn{
+  width: 150rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  background: #FF9E00;
+  padding: 0 20rpx;
+  margin: 0;
+  border: none;
+  font-size: 24rpx;
+  color: #fff;
+  box-sizing: content-box;
+  position: absolute;
+  left: 50%;
+  top: -110rpx;
+  transform: translateX(-50%);
+}

@@ -5,7 +5,10 @@ Component({
     multipleSlots: true
   },
   properties: {
-
+    innerText1: { type: String, value: '', },
+    innerText2: { type: String, value: '', },
+    backgroundColor: { type: String, value: '', },
+    capsuleSet: { type: Object, value: '',}
   },
   data: {
     navtopHeight: app.globalData.navtopHeight + 10,
@@ -17,6 +20,9 @@ Component({
       if (e.currentTarget.dataset.id - 0) 
       this.setData({ isFollow: false })
       else this.setData({ isFollow: true })
+    },
+    tooltap(e){
+
     }
   }
 })

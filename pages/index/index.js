@@ -15,6 +15,13 @@ exports.default = Page({
     sliderOffset: 0,
     sliderLeft: 0,
     sliderWidth: sliderWidth,
+    capsuleSet: {
+      border: '#43240F',
+      innerText1: '关注',
+      innerText2: '热门',
+      backgroundColor: '#FCE33E',
+      img: '/assets/icon/search.png'
+    },
 
     items: [],
     imgUrls: [
